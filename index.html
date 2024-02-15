@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <video class="bg" src="./images/bg.mp4" autoplay muted loop></video>
+  <div id="header">RION KUDO</div>
+
+  
+    <form action="#" method="get" novalidate>
+      <div id="main-container">
+        <p>GET STARTED</p>
+        <div id="form-container">
+          <div id="left-form">
+              <div class="form">
+                <label for="first_name"></label>
+                <span>FIRST NAME</span>
+                <input type="text" id="first_name" class="check" name="first_name" autocomplete="off" required oninput="checkIfThereIsNoValue(firstName.value.trim().length, firstName)" status="neutral"/>
+                <span class="error" aria-live="polite"></span>
+              </div>
+
+              <div class="form">
+                <label for="mail"></label>
+                <span>EMAIL</span>
+                <input type="email" id="mail" class="check" name="mail" autocomplete="off" required oninput="checkEmailLength(email.value.trim().length, email)" status="neutral"/>
+                <span class="error" aria-live="polite"></span>
+              </div>
+
+              <div class="form">
+                <label for="user_password"></label>
+                <span>PASSWORD</span>
+                <input type="password" id="user_password" class="check" name="user_password" autocomplete="off" required oninput="checkPasswordLength(password.value.trim().length, password)" status="neutral"/>
+                <span class="error" aria-live="polite"></span>
+              </div>
+          </div>
+          <div id="right-form">
+              <div class="form">
+                <label for="last_name"></label>
+                <span>LAST NAME</span>
+                <input type="text" id="last_name" class="check" name="last_name" autocomplete="off" required oninput="checkIfThereIsNoValue(lastName.value.trim().length, lastName)" status="neutral"/>
+                <span class="error" aria-live="polite"></span>
+              </div>
+
+              <div class="form">
+                <label for="number"></label>
+                <span>PHONE NUMBER</span>
+                <input type="tel" id="number" class="check" name="number" autocomplete="off" required oninput="checkNumberLength(phoneNumber.value.trim().length, phoneNumber)" status="neutral"/>
+                <span class="error" aria-live="polite"></span>
+              </div>
+
+              <div class="form">
+                <label for="confirm_password"></label>
+                <span>CONFIRM PASSWORD</span>
+                <input type="password" id="confirm_password" class="check" name="confirm_password" autocomplete="off" required oninput="matchPassword(confirmPassword)" status="neutral"/>
+                <span class="error" aria-live="polite"></span>
+              </div>
+          </div>
+        </div> 
+        <button type="submit" id="sign_up" status="error">SIGNUP</button>
+        <div id="login">ALREADY HAVE AN ACCOUNT? <a href="#">LOG IN</a></div>
+      </div>
+    </form>  
+
+  
+</body>
+<script src="script.js"></script>
+</html>
+
+

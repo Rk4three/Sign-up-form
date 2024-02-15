@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Chillax-Bold;
+    src:url(./fonts/Chillax-Bold.otf);
+}
+
+@font-face {
+    font-family: Chillax-Light;
+    src:url(./fonts/Chillax-Light.otf);
+}
+
+@font-face {
+    font-family: Chillax-Regular;
+    src:url(./fonts/Chillax-Regular.otf);
+}
+
+body {
+    margin: 0;
+    background-color: #212A3E;
+    font-family: Chillax-Regular;
+    font-size: 1rem;
+}
+
+.bg {
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#header {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    color: #F1F6F9;
+    font-family: Chillax-Bold;
+    font-size: 2rem;
+}
+
+#main-container {
+   
+    margin-top: 8rem;
+    margin-left: 50rem;
+    margin-right: 5rem;
+    height: 60vh;
+    color: #F1F6F9;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-container {
+   
+    width: 100%;
+    color: #F1F6F9;
+    display: flex;
+    align-items: flex-start;
+}
+
+p {
+    font-size: 3rem;
+    font-family: Chillax-Bold;
+}
+
+.form {
+    height: 6vh;
+    width: 15vw;
+    margin-right: 12.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+#login {
+    margin-top: 1rem;
+}
+
+button {
+    font-family: Chillax-Regular;
+    font-size: 1rem;
+    margin-top: 2rem;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #F1F6F9;
+    background-color: #212A3E;
+    color: #F1F6F9;
+}
+
+
+
+.check[status="neutral"] {
+    border-color: #F1F6F9;
+}
+
+.check[status="success"] {
+    border-color: #5D9C59;
+}
+
+.check[status="error"] {
+    border-color: red;
+}
+
+input {
+    font-family: Chillax-Light;
+    font-size: 1rem;
+    color: #F1F6F9;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #F1F6F9;
+    background-color: #212A3E;
+}
+
+input:focus {
+    color: #F1F6F9;
+    background-color: #212A3E;
+    border-color: #394867;
+    outline: 0;
+    box-shadow: 0 0 0 0.20rem rgb(57 72 103 / 100%);
+}
